@@ -1,0 +1,29 @@
+mysql> show tables;
++-------------------+
+| Tables_in_Chinook |
++-------------------+
+| Album             |
+| Artist            |
+| Customer          |
+| Employee          |
+| Genre             |
+| Invoice           |
+| InvoiceLine       |
+| MediaType         |
+| Playlist          |
+| PlaylistTrack     |
+| Track             |
++-------------------+
+11 rows in set (0.00 sec)
+
+mysql> desc Album;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| AlbumId  | int          | NO   | PRI | NULL    | auto_increment |
+| Title    | varchar(160) | NO   |     | NULL    |                |
+| ArtistId | int          | NO   | MUL | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> notee;
